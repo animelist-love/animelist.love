@@ -1,0 +1,1 @@
+export { default as component } from "..\\..\\..\\src\\routes\\(app)\\manga\\details\\[urlManga]\\+page@(app).svelte";

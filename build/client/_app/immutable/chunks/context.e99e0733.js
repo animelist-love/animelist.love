@@ -1,0 +1,1 @@
+import{M as o,N as n}from"./index.28a8b093.js";const e="$$_queryClient",i=()=>{const t=n(e);if(!t)throw new Error("No QueryClient was found in Svelte context. Did you forget to wrap your component with QueryClientProvider?");return t},s=t=>{o(e,t)};export{i as g,s};

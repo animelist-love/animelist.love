@@ -1,0 +1,1 @@
+import{a as r}from"./GlobalStore.6e590141.js";const c=(a,e)=>{function t(i){i.preventDefault(),r.set({id:e.id,image:e.image,name:e.name})}return a.addEventListener("click",t),{destroy(){a.removeEventListener("click",t)}}};export{c as o};

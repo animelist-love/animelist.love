@@ -1,0 +1,136 @@
+{
+	"/(app)": [
+		"src/routes/(app)/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/anime/details/[url]": [
+		"src/routes/(app)/anime/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts",
+		"src/routes/(app)/anime/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/anime/details/[url]/characters": [
+		"src/routes/(app)/anime/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/anime/details/[url]/recommendations": [
+		"src/routes/(app)/anime/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/anime/details/[url]/staff": [
+		"src/routes/(app)/anime/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/anime/details/[url]/trailer": [
+		"src/routes/(app)/anime/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/anime/details/[url]/watch": [
+		"src/routes/(app)/anime/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/anime/view/[idEpisode]/[urlAnime]": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/browse": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/browse/anime": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/browse/characters": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/browse/manga": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/browse/staff": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/character/[url]": [
+		"src/routes/(app)/character/[url]/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/library": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/manga": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/manga/details/[url]": [
+		"src/routes/(app)/manga/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts",
+		"src/routes/(app)/manga/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/manga/details/[url]/characters": [
+		"src/routes/(app)/manga/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/manga/details/[url]/recommendations": [
+		"src/routes/(app)/manga/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/manga/details/[url]/relations": [
+		"src/routes/(app)/manga/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/manga/details/[url]/staff": [
+		"src/routes/(app)/manga/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/manga/details/[url]/trailer": [
+		"src/routes/(app)/manga/details/[url]/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/manga/read/[idChapter]/[urlManga]": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/staff/[url]": [
+		"src/routes/(app)/staff/[url]/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/studio/[url]": [
+		"src/routes/(app)/studio/[url]/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/(app)/timeline": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	]
+}
