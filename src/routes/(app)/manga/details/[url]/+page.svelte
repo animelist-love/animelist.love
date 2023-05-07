@@ -1,5 +1,6 @@
 <script lang="ts">
   // Import Types
+  import type { PageData } from "./$types";
   import type { Maybe } from "@/types";
   import type {
     MediaStats,
@@ -27,7 +28,6 @@
   } from "@/stores/DetailPageStore";
 
   // Import Components
-  import StatsSkeleton from "@/components/skeletons/StatsSkeleton.svelte";
   const Stats = async () =>
     (await import("@/components/DetailsPage/Stats.svelte")).default;
   const Rankings = async () =>
@@ -36,11 +36,12 @@
     (await import("@/components/shared/MediaExternalLink.svelte")).default;
   const Info = async () =>
     (await import("@/components/DetailsPage/Info.svelte")).default;
-  const CharactersVertical = async () =>
-    (await import("@/components/DetailsPage/CharactersVertical.svelte"))
-      .default;
+  const CharactersCircle = async () =>
+    (await import("@/components/DetailsPage/CharactersCircle.svelte")).default;
   const Relations = async () =>
     (await import("@/components/DetailsPage/Relations.svelte")).default;
+
+  export let data: PageData;
 
   let tabActiveValue: string | null = null;
   let isLoading: boolean = true;
@@ -99,9 +100,9 @@
 
 <div class="w-full flex flex-col space-y-8">
   <!-- Stats block -->
-  {#if isLoading}
+  <!-- {#if isLoading}
     <StatsSkeleton />
-  {/if}
+  {/if} -->
   {#if !!statsValue}
     {#await Stats() then StatsComponent}
       <StatsComponent source={statsValue} />
@@ -121,32 +122,14 @@
   {/if}
   <!-- List of characters -->
   {#if !!charactersValue && charactersValue.length}
-    {#await CharactersVertical() then CharactersVerticalComponent}
-      <div class="flex flex-col">
-        <!-- Title -->
-        <div>
-          <h2 class="md:text-lg font-semibold">List of characters</h2>
-        </div>
-        <CharactersVerticalComponent
-          {isLoading}
-          {isSuccess}
-          source={charactersValue}
-        />
-      </div>
+    {#await CharactersCircle() then CharactersCircleComponent}
+      <CharactersCircleComponent mediaId={data.Id} />
     {/await}
   {/if}
   <!-- List of relations -->
-  {#if !!relationsValue && relationsValue.length}
-    {#await Relations() then RelationsComponent}
-      <div class="flex flex-col">
-        <!-- Title -->
-        <div>
-          <h2 class="md:text-lg font-semibold">List of related Anime/Manga</h2>
-        </div>
-        <RelationsComponent {isLoading} {isSuccess} source={relationsValue} />
-      </div>
-    {/await}
-  {/if}
+  {#await Relations() then RelationsComponent}
+    <RelationsComponent mediaId={data.Id} />
+  {/await}
   <!-- List of external Links -->
   {#if !!externalLinkValue && externalLinkValue.length}
     {#await MediaExternalLink() then MediaExternalLinkComponent}
